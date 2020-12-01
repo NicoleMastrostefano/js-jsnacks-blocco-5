@@ -54,9 +54,24 @@ let i = 5;
 for (let i = 0; i < 10; i++) {}
 // 5
 
+
+
 // concatenazione tramite Alt+\
 let stringa = 'Hello';
 console.log(
 `${stringa} World`
 );
-document.write(stringa+` world`)
+document.write(`${stringa} world`);
+
+
+
+// funzioni
+function somma( a, b ){
+    return a + b;
+}
+
+let somma = ( a , b ) => a + b;
+console.log(somma(3,2));
+
+
+const numeroCasuale = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
